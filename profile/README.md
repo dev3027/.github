@@ -3,6 +3,9 @@
 
 ## About
 This organization is for the feature projects of Dev3027. This repo is a showcasse of all those projects I am most proud of. All of these are still works in progress and in various stages of development, However each one can be set up and run with working code. You may not get full production ready functionality as features are still being researched and built.
+
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
 <!--
 
 **Here are some ideas to get you started:**
