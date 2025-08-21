@@ -1,5 +1,5 @@
 # Dev3027 - Mason Roberts 👋
-[Mason Roberts](https://mason-roberts.dev) [![email](https://img.shields.io/static/v1?label=email&message=mrobe18@gmail.com&color=blue)](https://www.mason-roberts.dev)&nbsp;
+[![email](https://img.shields.io/static/v1?label=email&message=mrobe18@gmail.com&color=blue)](https://www.mason-roberts.dev)&nbsp;
 
 ## About
 This organization is for the feature projects of Dev3027. This repo is a showcasse of all those projects I am most proud of. All of these are still works in progress and in various stages of development, However each one can be set up and run with working code. You may not get full production ready functionality as features are still being researched and built.
