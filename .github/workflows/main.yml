@@ -5,17 +5,28 @@ on:
     # Runs at 12am IST
     - cron: '30 18 * * *'
   workflow_dispatch:
+
 jobs:
   update-readme:
     name: Update Readme with Metrics
     runs-on: ubuntu-latest
     steps:
+      # Step 1: Check out the correct repository
+      - uses: actions/checkout@v4
+        with:
+          # This specifies the repository to check out.
+          repository: 'dev3027/.github'
+          # This token is used to check out the repository.
+          token: ${{ secrets.GH_TOKEN }}
+
+      # Step 2: Run the WakaTime stats action in the checked-out repository
       - uses: anmol098/waka-readme-stats@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          REPOSITORY: 'dev3027/.github'
-          SHOW_PROFILE_VIEWS: false
-          SHOW_LOC_CHART: false
-          SHOW_SHORT_INFO: false
-          SYMBOL_VERSION: 3
+          # The invalid REPOSITORY input has been removed.
+          # The action will now automatically push to the checked-out repo.
+          SHOW_PROFILE_VIEWS: "false"
+          SHOW_LOC_CHART: "false"
+          SHOW_SHORT_INFO: "false"
+          SYMBOL_VERSION: "3"
