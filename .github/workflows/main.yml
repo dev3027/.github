@@ -1,26 +1,26 @@
-name: WakaTime Readme Update
+# name: WakaTime Readme Update
 
-on:
-  schedule:
+# on:
+  # schedule:
     # Runs at 12am IST / 1:30 PM EDT
-    - cron: '30 18 * * *'
-  workflow_dispatch:
+    # - cron: '30 18 * * *'
+  # workflow_dispatch:
 
-jobs:
-  update-readme:
-    name: Update Organization README
-    runs-on: ubuntu-latest
-    steps:
+# jobs:
+  # update-readme:
+    # name: Update Organization README
+    # runs-on: ubuntu-latest
+    # steps:
       # Step 1: Check out the organization's .github repository
-      - uses: actions/checkout@v4
-        with:
-          repository: 'dev3027/.github'
-          token: ${{ secrets.GH_TOKEN }}
+      # - uses: actions/checkout@v4
+        # with:
+          # repository: 'dev3027/.github'
+          # token: ${{ secrets.GH_TOKEN }}
 
       # Step 2: Run the WakaTime stats action
-      - uses: athul/waka-readme@master
-        with:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      # - uses: athul/waka-readme@master
+        # with:
+          # WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          # GH_TOKEN: ${{ secrets.GH_TOKEN }}
           # This tells the action where to find the README file
-          TARGET_PATH: '/profile/README.md'
+          # TARGET_PATH: '/profile/README.md'
