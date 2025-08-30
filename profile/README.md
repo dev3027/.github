@@ -4,8 +4,8 @@
 ## About
 This organization is for the feature projects of Dev3027. This repo is a showcasse of all those projects I am most proud of. All of these are still works in progress and in various stages of development, However each one can be set up and run with working code. You may not get full production ready functionality as features are still being researched and built.
 
-<!--START_SECTION:waka-->
-<!--END_SECTION:waka-->
+### Brooke & Maisy
+A e-commerce style app built as a working concept for an online craft store. Built in Rails with KiloCode extension. Tailwind for style and PostgreSQL for the database. This has a store front with Etsy like elements. Larger files, like images, are directly uploaded to a S3 bucket, using the AWS-S#-SDK gem. This app includes such features as breadcrumbs, Shopping cart
 <!--
 
 **Here are some ideas to get you started:**
